@@ -9,21 +9,26 @@ public class CaseBased {
 		    for(int i=0;i<input1.length();i++){
 		    	if(String.valueOf(input1.charAt(i)).equals(" ")){
 		    		space.add(i);
+		    		space.add(i);		//takes index of space in between letters
 		    		}
 		    }
 		    
 		  Integer [] array=space.toArray(new Integer[space.size()]);
+		  Integer [] array=space.toArray(new Integer[space.size()]); //converting List<Integer> to Integer []
 		  int k=0;
 		  do{
 			
 			  if(!String.valueOf(input1.charAt(0)).matches("[A-Z]+")){
 			    	isCaseBased=false;
+			    	isCaseBased=false; 								//make sure first letter is capital
 			    }
 			  else if(String.valueOf(input1.charAt((array[k])+1)).matches("[A-Z]+")){
 				  isCaseBased=true;
+				  isCaseBased=true;									//verifying every first letter after space is capital
 				  
 			  }else{
 				  isCaseBased=false;
+				  isCaseBased=false;								//else if first letter is not capital after space, then break the code and stop the loop.
 				  break;
 			  }
 			  k++;
