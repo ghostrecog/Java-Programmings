@@ -12,7 +12,7 @@ public class CaseBased {
 		    		}
 		    }
 		   Integer [] array=space.toArray(new Integer[space.size()]); //converting List<Integer> to Integer []
-		  int k=0;
+		  int k=0; //Initializing
 		  do{
 			
 			  if(!String.valueOf(input1.charAt(0)).matches("[A-Z]+")){
