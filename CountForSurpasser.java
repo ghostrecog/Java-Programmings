@@ -11,11 +11,13 @@ import java.util.*;
  * 4         |
  * 6---------
  *  output is
- *  5
+ *  5  //2<7,2<3,2<8,2<4,2<6 thus count is 5 similarly for rest of cases
  *  1
+ *  3
  *  3
  *  0
  *  1
+ *  0
  *
  */
 public class CountForSurpasser {
